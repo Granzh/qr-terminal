@@ -1,6 +1,6 @@
 #  QR Terminal
 
-[![Python Version](https://img.shields.io/badge/python-3.6+-blue.svg)](https://python.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Platform](https://img.shields.io/badge/platform-linux-blue?logo=linux&style=flat-square)](https://github.com/yourusername/qr-terminal)
+[![Python Version](https://img.shields.io/badge/python-3.6+-blue.svg)](https://python.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Platform](https://img.shields.io/badge/platform-linux-blue?logo=linux&style=flat-square)](https://github.com/Granzh/qr-terminal)
 
 **Generate QR codes in terminal from any command output via pipes**
 
