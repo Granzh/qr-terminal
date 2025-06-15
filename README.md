@@ -19,7 +19,7 @@ QR Terminal is a command-line utility for Linux that converts any text output in
 ### Installation
 
 ```bash
-# From source (recommended)
+# From source 
 git clone https://github.com/Granzh/qr-terminal
 cd qr-terminal
 pip install -e .
@@ -45,10 +45,10 @@ brew install jpeg zlib
 
 ```bash
 # Simple example
-echo "Hello, World!" | qr
+echo "Hello, World!" | qrterm
 
 # Your IP address
-curl -s ifconfig.me | qr
+curl -s ifconfig.me | qrterm
 ```
 
 ## Usage Examples
@@ -57,66 +57,66 @@ curl -s ifconfig.me | qr
 
 ```bash
 # Simple text
-echo "Hello World" | qr
+echo "Hello World" | qrterm
 
 # Direct text input
-qr "My secret code"
+qrterm "My secret code"
 
 # File contents
-cat /etc/hostname | qr
+cat /etc/hostname | qrterm
 
 # Command output
-date | qr
+date | qrterm
 
 # Current directory
-pwd | qr
+pwd | qrterm
 ```
 ### Files and Data
 
 ```bash
 # System information
-uname -a | qr
+uname -a | qrterm
 
 # Process list
-ps aux | head -10 | qr
+ps aux | head -10 | qrterm
 
 # Configuration file contents
-cat ~/.bashrc | head -20 | qr
+cat ~/.bashrc | head -20 | qrterm
 
 # Encode file as base64
-base64 small_file.txt | qr
+base64 small_file.txt | qrterm
 
 # Log output
-tail -n 20 /var/log/syslog | qr
+tail -n 20 /var/log/syslog | qrterm
 ```
 
 ### Quality Settings
 
 ```bash
 # High quality for important data
-cat important.txt | qr --error-correction H
+cat important.txt | qrterm --error-correction H
 
 # Compact QR code
-echo "test" | qr --border 1 --box-size 1
+echo "test" | qrterm --border 1 --box-size 1
 
 # Large QR code
-echo "test" | qr --box-size 2 --border 6
+echo "test" | qrterm --box-size 2 --border 6
 
 # Colored with inversion
-echo "colorful" | qr --color --invert
+echo "colorful" | qrterm --color --invert
 ```
 
 ### File Output
 
 ```bash
 # Save as PNG
-echo "https://example.com" | qr --output website.png
+echo "https://example.com" | qrterm --output website.png
 
 # Save as SVG
-curl -s ifconfig.me | qr --output my-ip.svg
+curl -s ifconfig.me | qrterm --output my-ip.svg
 
 # Quiet mode for scripts
-echo "data" | qr --output data.png --quiet
+echo "data" | qrterm --output data.png --quiet
 ```
 
 ##  Command Line Options
@@ -158,4 +158,3 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ##  Acknowledgments
 
 - [python-qrcode](https://github.com/lincolnloop/python-qrcode) - core QR code generation library
-- [colorama](https://github.com/tartley/colorama) - cross-platform colored terminal text
